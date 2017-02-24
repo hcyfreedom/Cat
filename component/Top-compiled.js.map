@@ -1,1 +1,0 @@
-{"version":3,"sources":["Top.js"],"names":[],"mappings":";;;;AAGA;;;;;;;;;;+eAHA;;;;;AAG4B;IACtB,G;;;;;;;;;;;iCACM;AACJ;AACH;;;;EAHa,gBAAM,S","file":"Top-compiled.js","sourcesContent":["/**\r\n * Created by Acer on 2017/2/22.\r\n */\r\nimport React from 'react';  //引入react组件\r\nclass Top extends React.Component {\r\n    render(){\r\n        return\r\n    }\r\n}"]}
