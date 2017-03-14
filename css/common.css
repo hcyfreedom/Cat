@@ -1,5 +1,5 @@
 *{
-   margin: 0;
+    margin: 0;
     padding:0;
     border: 0;
 }
@@ -8,7 +8,8 @@ body{
     padding:0;
     border: 0;
     background: url("../imgs/bodybg.png");
-    background-size: cover;
+    /*background-size: cover;*/
+    height:100%;
 }
 @font-face {
     font-family: Goudy;
@@ -24,13 +25,46 @@ body{
 .navItems img{
     vertical-align: middle;
 }
+
+/*Topic组件样式*/
+.topicBG{
+    width: 980px;
+    height: 492px;
+    background: url("../imgs/topic2.png") no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+    /*top: 198px;*/
+}
+.topicImg{
+    width: 770px;
+    height: 110px;
+    margin: 0 auto;
+    /*background-color: #f4ebe8;*/
+    text-align: center;
+    padding-top: 370px;
+}
+.clear{
+    clear: both;
+    height: 0;
+    width:0;
+    line-height: 0;
+    font-size: 0;
+}
+.auBottom{
+    width: 980px;
+    height: 197px;
+    margin: 0 auto;
+    background: url("../imgs/bottom.png");
+}
 /*AboutUs.js组件部分样式*/
 .mainImg{
     width: 980px;
-    min-height: 1300px;
+    min-height: 700px;
+    height:auto;
     margin: 0 auto;
-    position: relative;
-    background: url("../imgs/contentbody.png");
+    /*position: relative;*/
+    background: url("../imgs/newBg.png");
 }
 .topic{
     width: 282px;
@@ -52,9 +86,11 @@ body{
     width: 370px;
     height: auto;
     /*background-color: antiquewhite;*/
-    position: absolute;
-    top: 470px;
-    left: 120px;
+    /* position: absolute; */
+    /* top: 470px; */
+    /* left: 120px; */
+    float: left;
+    margin-left: 118px;
 }
 .auContent p{
     font-family: Goudy;
@@ -65,31 +101,20 @@ body{
 .auHeadImg{
     width: 390px;
     height: 380px;
-    /*background-color: antiquewhite;*/
-    position: absolute;
-    float: right;
-    right: 85px;
-    top: 560px;
+    float: left;
+    background: url("../imgs/roll.png");
     background-size: cover;
 }
-.auBottom{
-    width: 396px;
-    height: 110px;
-    position: absolute;
-    bottom: 25px;
-    left: 292px;
-    /*background-color: antiquewhite;*/
-    background: url("../imgs/down.png") no-repeat center;
-    background-size: cover;
+.auHeadImg img{
+    margin-left: 60px;
+    margin-top: 60px;
 }
 /*ContactUs组件样式*/
 .Content{
     width: 370px;
     height: auto;
-    /*background-color: #bcbdbd;*/
-    position: absolute;
-    top: 470px;
-    left: 120px;
+    margin-left: 70px;
+    float: left;
 }
 .Content ul li {
     list-style: none;
@@ -136,18 +161,21 @@ body{
     height: 152px;
     /*background-color: #f4ebe8;*/
     position: absolute;
-    top: 540px;
-    right: -230px;
+    top: 1020px;
+    padding-left: 95px;
+
 }
 .submitBtn{
     width: 190px;
     height: 55px;
     background-color: #f4ebe8;
-    background: url("../imgs/Send_Button.png") no-repeat center;
+    background: url(../imgs/Send_Button.png) no-repeat center;
     background-size: cover;
-    position: absolute;
-    bottom:180px;
-    left: 395px;
+    /* position: absolute; */
+    /* bottom: 180px; */
+    /* left: 395px; */
+    margin-top: 720px;
+    margin-left: 328px;
 }
 /*Kings的样式*/
 .topicKs{
@@ -157,4 +185,185 @@ body{
     background-size: cover;
     top: 351px;
     left: 395px;
+}
+.king{
+    height:auto;
+    min-height: 1000px;
+}
+.kingsBorder {
+    width: 344px;
+    height: 425px;
+    position: relative;
+    display: inline-block;
+    margin-left: 96px;
+    background: url(../imgs/kingsBorder.png) no-repeat top;
+}
+.kingImg{
+    width: 241px;
+    height: 242px;
+    position: absolute;
+    top: 22px;
+    left: 52px;
+    background-color: white;
+}
+.kingImg img{
+    width: 241px;
+    height: 242px;
+}
+.kingText{
+    width: 240px;
+    height: 50px;
+    position: absolute;
+    /*background-color: aliceblue;*/
+    top: 270px;
+    text-align: center;
+    left: 50px;
+    color: #63595c;
+    font-family: Goudy;
+    font-size: 38px;
+}
+.plansImg{
+    width: 980px;
+    min-height: 476px;
+    height:auto;
+    margin: 0 auto;
+    /*position: relative;*/
+    background: url("../imgs/plansImg.png") repeat-y;
+}
+.plansText{
+    width: 241px;
+    height: auto;
+    /*background-color: #86ffd0;*/
+    font-size: 20px;
+    color: #655452;
+    font-family: Goudy;
+    position: absolute;
+    top: 380px;
+    left: 52px;
+    text-align: center;
+}
+.plansBorder{
+    width: 344px;
+    height: 476px;
+    position: relative;
+    display: inline-block;
+    margin-left: 96px;
+    background: url(../imgs/kingsBorder.png) no-repeat top;
+}
+.centerBg{
+    width: 806px;
+    height: 525px;
+    margin: 0 auto;
+    background: url("../imgs/CenterBg.png");
+}
+.centerBottom{
+    width: 806px;
+    height: 175px;
+    margin: 0 auto;
+    background: url("../imgs/centerBottom.png");
+}
+.enterBar{
+    width:100%;
+    height: 199px;
+    background: url("../imgs/enterBar.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    /*box-shadow:5px 5px #dfc0bd;*/
+}
+
+.enterBar p{
+    display: inline-block;
+    font-family: Goudy;
+    font-size: 30px;
+    color: #655452;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.KittensImg{
+    width: 980px;
+    min-height: 802px;
+    height:auto;
+    margin: 0 auto;
+    /*position: relative;*/
+    background: url("../imgs/kittensBg.png") repeat-y;
+}
+.childBorder{
+    width: 583px;
+    height: 369px;
+    margin: 0 auto;
+    background: url("../imgs/childBorder.png");
+    position: relative;
+}
+.childImg{
+    width: 471px;
+    height: 243px;
+    position: absolute;
+    top: 22px;
+    left: 55px;
+    background-color: white;
+}
+.childImg img{
+    width: 100%;
+    height: 100%;
+}
+.childBorder p{
+    width: 583px;
+    padding-top: 280px;
+    /* padding-left: 290px; */
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #655452;
+    font-family: Goudy;
+    text-shadow: 5px 5px 5px #655452;
+}
+.moImg{
+    width:204px;
+    height: 210px;
+    background: url("../imgs/photo.png") no-repeat;
+    display: inline-block;
+    margin-left: 270px;
+    margin-top: 50px;
+    position: relative;
+}
+.faImg{
+    width:204px;
+    height: 210px;
+    background: url("../imgs/photo.png") no-repeat;
+    display: inline-block;
+    margin-left: 36px;
+    margin-top: 50px;
+    position: relative;
+}
+.moImg img,.faImg img{
+    width: 141px;
+    height: 140px;
+    position: absolute;
+    top: 15px;
+    left: 31px;
+}
+.moImg p,.faImg p{
+    position: absolute;
+    width: 204px;
+    padding-top: 160px;
+    /* padding-left: 290px; */
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #655452;
+    font-family: Goudy;
+}
+.detailChild{
+    width: 204px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+.detailChild p{
+    text-align: center;
+    overflow: hidden;
+    font-size: 25px;
+    color: #655452;
+    font-family: Goudy;
 }

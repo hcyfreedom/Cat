@@ -17,8 +17,20 @@ export default class NavItem extends React.Component {
         this.setState({src:this.props.src.src})
     }
     handleClick(){
-        this.setState({src:this.props.src.hoverSrc})
+        // window.location.hash = e.key;
+        // this.setState({
+        //     src:this.props.src.hoverSrc,
+        //     current: e.key,
+        //     openKeys: e.keyPath.slice(1)
+        // });
+
     }
+    // onToggle(info){
+    //     console.log('onToggle',info)
+    //     this.setState({
+    //         openKeys: info.open?info.keyPath : info.keyPath.slice(1)
+    //     });
+    // }
     render() {
         return (
             <div  className="navItems">

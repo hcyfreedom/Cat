@@ -3,6 +3,7 @@
  */
 import React from 'react';  //引入react组件
 import NavItem from './NavItem';
+import {Link} from 'react-router-dom';
 class Nav extends React.Component {  //定义组件，也可以用React.createClass方法创建组件
     constructor(){
         super();
@@ -10,36 +11,44 @@ class Nav extends React.Component {  //定义组件，也可以用React.createCl
         {
             src:'../imgs/Aboutus.png',
             hoverSrc:'../imgs/AboutusM.png',
-            clickSrc:'../imgs/AboutusP.png'
+            clickSrc:'../imgs/AboutusP.png',
+            href: '/about',
         },
         {
             src:'../imgs/Aboutragdoll.png',
             hoverSrc:'../imgs/AboutragdollM.png',
-            clickSrc:'../imgs/AboutragdollP.png'
+            clickSrc:'../imgs/AboutragdollP.png',
+            href: '/ragdoll',
         },{
             src:'../imgs/Kings.png',
             hoverSrc:'../imgs/KingsM.png',
-            clickSrc:'../imgs/KingsP.png'
+            clickSrc:'../imgs/KingsP.png',
+            href: '/kings',
         },{
             src:'../imgs/navmid.png',
             hoverSrc:'../imgs/navmid.png',
-            clickSrc:'../imgs/navmid.png'
+            clickSrc:'../imgs/navmid.png',
+            href: '/',
         },{
             src:'../imgs/Queens.png',
             hoverSrc:'../imgs/QueensM.png',
-            clickSrc:'../imgs/QueensP.png'
+            clickSrc:'../imgs/QueensP.png',
+            href: '/queens',
         },{
             src:'../imgs/Plans.png',
             hoverSrc:'../imgs/PlansM.png',
-            clickSrc:'../imgs/PlansP.png'
+            clickSrc:'../imgs/PlansP.png',
+            href: '/plans',
         },{
             src:'../imgs/Kittens.png',
             hoverSrc:'../imgs/KittensM.png',
-            clickSrc:'../imgs/KittensP.png'
+            clickSrc:'../imgs/KittensP.png',
+            href: '/kittens',
         },{
             src:'../imgs/Contact.png',
             hoverSrc:'../imgs/ContactM.png',
-            clickSrc:'../imgs/ContactP.png'
+            clickSrc:'../imgs/ContactP.png',
+            href: '/contact',
         },
 ]
         this.state = {
@@ -48,7 +57,7 @@ class Nav extends React.Component {  //定义组件，也可以用React.createCl
     }
     render() {
         const navItems = this.state.items.map((ele,idx)=>{
-            return <NavItem key={idx} src={ele}/>
+            return <Link key={idx} to={ele.href}><NavItem  src={ele}/></Link>
         });
         return(
             <div style={navStyle}>
